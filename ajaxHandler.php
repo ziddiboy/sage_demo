@@ -17,6 +17,7 @@
         unset($scourse1);
     }
     elseif($_POST['action'] == 'updateCourse'){
+        $scourse1 = new Course();
     	$scourse1->updateCourseDetails($_POST['name'],$_POST['course_id']);
         unset($scourse1);
     }
